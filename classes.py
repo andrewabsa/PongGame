@@ -8,7 +8,7 @@ class Startup():
         self.wn.setup(width=800, height=600)
         self.wn.tracer(0)
 
-#Paddle A
+# Paddle A
 class Paddle_a():
     def __init__(self):
         self.paddle_a = turtle.Turtle()
@@ -19,7 +19,7 @@ class Paddle_a():
         self.paddle_a.penup()
         self.paddle_a.goto(-350, 0)
 
-#Paddle B
+# Paddle B
 class Paddle_b():
     def __init__(self):
         self.paddle_b = turtle.Turtle()
@@ -29,7 +29,15 @@ class Paddle_b():
         self.paddle_b.shapesize(stretch_wid=5, stretch_len=1)
         self.paddle_b.penup()
         self.paddle_b.goto(350, 0)
-
+# Ball
+class Ball():
+    def __init__(self):
+        ball = turtle.Turtle()
+        ball.speed(0)
+        ball.shape("square")
+        ball.color("white")
+        ball.penup()
+        ball.goto(0, 0)
 
 class Main():
     def __init__(self):
